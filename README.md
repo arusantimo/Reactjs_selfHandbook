@@ -1,5 +1,5 @@
 # Reactjs_selfHandbook
-Reactjs 개인적인 사용법 성능 개선 방법 정리
+Reactjs 개인적인 사용법 성능 개선 방법 정리 (기본적인 리엑트의 계념은 생략..)
 
 ## 1) 컴포넌트 Component
 
@@ -190,4 +190,20 @@ class Component extends React {
 doSomeThing 메소드를 생성 할 때 arrow 함수를 사용하면 이미 doSomeThing 메소드를 Component의 범위에 바인딩하고 doSomeThing은 항상 동일하므로 우리 컴포넌트는 자신을 다시 렌더링하지 않는다.
 
 
-### 2-4) 비용이 많이 들어가는 로직을 캐시화 한다.
+### 2-4) 비용이 많이 들어가는 로직을 캐시화 한다
+보충설명...작성중
+
+### 2-5) why-did-you-update툴 사용
+불필요한 업데이트를 알려준다.
+<img src="https://camo.githubusercontent.com/0f34a575ad3f81c9826f54c03a17da848e1ee038/687474703a2f2f692e696d6775722e636f6d2f556938595542652e706e67" />
+
+사용방법
+```
+$ npm install why-did-you-update
+```
+```
+if (process.env.NODE_ENV !== 'production') {
+  const {whyDidYouUpdate} = require('why-did-you-update')
+  whyDidYouUpdate(React)
+}
+```
