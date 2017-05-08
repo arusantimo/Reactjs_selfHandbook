@@ -1,5 +1,5 @@
 # Reactjs_selfHandbook
-Reactjs 개인적인 사용법 최적화 방법 정리
+Reactjs 개인적인 사용법 성능 개선 방법 정리
 
 ## 1) 컴포넌트 Component
 
