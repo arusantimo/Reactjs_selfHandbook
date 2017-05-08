@@ -115,7 +115,7 @@ interface IAppState {
 class Main extends React.Component<IAppProps, IAppState> {
   constructor(props:IAppProps)  {
     super(props:IAppProps);
-    state:IAppState = {
+    this.state = {
       isChanged: false,
     };
   }
