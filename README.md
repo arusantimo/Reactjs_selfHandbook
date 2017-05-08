@@ -111,7 +111,7 @@ interface IAppProps {
 interface IAppState {
   isChanged: boolean;
 };
-//JS 자바스크립트
+//TS 타입스크립트
 class Main extends React.Component<IAppProps, IAppState> {
   constructor(props:IAppProps)  {
     super(props:IAppProps);
