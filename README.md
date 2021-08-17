@@ -186,6 +186,10 @@ class Component extends React {
     );
   }
 }
+
+
+
+
 ```
 doSomeThing 메소드를 생성 할 때 arrow 함수를 사용하면 이미 doSomeThing 메소드를 Component의 범위에 바인딩하고 doSomeThing은 항상 동일하므로 우리 컴포넌트는 자신을 다시 렌더링하지 않는다.
 
